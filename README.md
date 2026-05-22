@@ -14,7 +14,7 @@ A quantitative finance project that dynamically detects hidden market regimes us
 | Sharpe Ratio | **0.88** | 0.74 |
 | Sortino Ratio | **1.23** | 0.96 |
 | Max Drawdown | **-15.0%** | -28.7% |
-| Win Rate | see notebook | see notebook |
+| Win Rate | 54.4% | 55.3% |
 
 > The strategy achieves **47% less drawdown** and superior risk-adjusted returns (Sharpe 0.88 vs 0.74) compared to a static 60/40 portfolio — at the cost of lower total return due to conservative positioning during extended bull markets.
 
@@ -65,7 +65,7 @@ The model correctly identified:
 
 ## Tech Stack
 
-- **Python 3.14**
+- **Python 3.11**
 - **yfinance** — market data (SPY, EFA, TLT, IEF, GLD, SHY)
 - **scikit-learn** — Gaussian Mixture Model for regime detection
 - **scipy.optimize** — convex portfolio optimization
