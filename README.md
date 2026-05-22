@@ -30,6 +30,15 @@ A quantitative finance project that dynamically detects hidden market regimes us
    - 🟢 **Bull** - low volatility, positive trend (+24.1% avg annual return)
    - 🟠 **Bear** - elevated volatility, choppy returns (+3.9% avg annual return)  
    - 🔴 **Crisis** - extreme volatility, severe drawdowns (-65.0% avg annual return)
+### Regime Transition Probabilities
+
+| From → To | Bull | Bear | Crisis |
+|-----------|------|------|--------|
+| **Bull**  | 90.9% | 9.1% | 0.0% |
+| **Bear**  | 11.9% | 86.2% | 1.9% |
+| **Crisis**| 0.4% | 17.3% | 82.2% |
+
+> Regimes are highly persistent — once in a Crisis, there is an 82.2% chance of staying in Crisis the next day. Bull markets are the most stable at 90.9% self-transition.
 
 2. **Dynamic Optimization** - A convex optimizer shifts portfolio weights based on the detected regime:
    - Bull - Maximize Sharpe ratio (heavy equities)
